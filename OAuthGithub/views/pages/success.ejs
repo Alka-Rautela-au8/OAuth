@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Github Authentication</title>
+
+    <style>
+        body{
+            padding-top: 70px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>
+            <strong>Name</strong>:<%=userData.name%><br/>
+            <strong>Username</strong>:<%=userData.login%><br/>
+            <img src=<%=userData.avatar_url%> alt="dp"/><br/>
+            <strong>Company</strong>:<%=userData.company%><br/>
+            <strong>Bio</strong>:<%=userData.bio%><br/>
+            <strong>Public repos: </strong><%= userData.public_repos%>
+        </p>
+    </div>
+</body>
+</html>
